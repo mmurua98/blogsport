@@ -39,14 +39,14 @@
                 </div>
 
                 <div class="from-group">
-                    <label for="category_id">Categoria</label>
+                    <label for="category_id">Category</label>
 
                     <select
                         name="category_id"
                         class="form-control @error('category_id') is-invalid @enderror "
                         id="category_id"
                     >
-                        <option value="">-- Seleccione -</option>
+                        <option value="">-- Choose a category -</option>
                         @foreach ($categories as $category)
                             <option 
                                 value="{{ $category->id }}" 
@@ -78,7 +78,7 @@
                 </div>
 
                 <div class="form-group mt-3">
-                    <label for="image">Elige la imagen</label>
+                    <label for="image">Select an image</label>
 
                     <input 
                         id="image" 
@@ -100,7 +100,7 @@
                 </div>
 
                 <div class="form-group">
-                    <input type="submit" class="btn btn-primary" value="Agregar Receta" >
+                    <input type="submit" class="btn btn-primary" value="Update post" >
                 </div>
 
             </form>

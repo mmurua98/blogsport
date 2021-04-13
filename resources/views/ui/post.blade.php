@@ -13,7 +13,7 @@
                     <date-post date="{{$date}}" ></date-post>
                 </p>
 
-                <p> {{ count( $post->likes ) }} Liked it</p> 
+                <p> {{ count( $post->likes ) }} Likes</p> 
             </div>
 
             <p> {{ Str::words(  strip_tags( $post->content ), 20, ' ...' ) }} </p>
